@@ -16,7 +16,6 @@ export default class SearchBar extends Component{
 
     handleSearchSubmit = (e) => {
         e.preventDefault()
-        console.log(`search clicked`);
         FinancialInstitutionServices.getSearchResults(this.state.term)
             .then(results => this.context.setResults(results.results))
             .catch((err) => console.log(err));

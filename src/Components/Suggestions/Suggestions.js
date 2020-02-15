@@ -31,7 +31,6 @@ export default class Suggestions extends Component{
     }
 
     render(){
-        console.log(`before rendering suggestion`, this.props.suggestions);
         return (
             <div className='Suggestions'>
                 <ul className='Suggestions__ul'>
